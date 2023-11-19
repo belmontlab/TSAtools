@@ -32,7 +32,3 @@ bw_export(gr, prefix = "sample")
 bw_export(gr, prefix = "sample", vars = c("var1", "var2"))
 
 }
-\keyword{BigWig,}
-\keyword{GRanges,}
-\keyword{export}
-\keyword{genomics,}

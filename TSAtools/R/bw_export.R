@@ -12,7 +12,6 @@
 #' @return This function does not return a value but writes BigWig files to the current working directory
 #'         or specified path.
 #'
-#' @keywords genomics, BigWig, GRanges, export
 #' @export
 #'
 #' @examples
@@ -24,6 +23,7 @@
 #' bw_export(gr, prefix = "sample", vars = c("var1", "var2"))
 #'
 bw_export<-function(grange,prefix,vars="all"){
+  library(GenomicRanges)
   # exports the mcols of GRANES as bw
   if (vars=="all"){
     mcol_names<-names(mcols(grange))

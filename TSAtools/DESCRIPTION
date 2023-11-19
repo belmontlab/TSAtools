@@ -1,20 +1,25 @@
 Package: TSAtools
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: Tools for working with TSA-seq BigWig files.
+Version: 1.0
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Omid",
+           family = "Gholamalamdari",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "gholama2@illinois.edu")
+Description: `TSAtools` is an R package developed by Omid Gholamalamdari from the Andrew Belmont lab at the University of Illinois at Urbana-Champaign. This package provides a suite of tools for working with TSA-seq BigWig files and other binned genomic data, facilitating efficient data processing and analysis in genomic studies.
+License: MIT
 Encoding: UTF-8
 LazyData: true
 Imports: 
     dplyr,
+    plyr,
+    ggplot2,
+    GenomeInfoDb,
     rtracklayer,
     GenomicRanges,
     doMC,
-    data.table
+    data.table,
+    regioneR,
+    BSgenome.Hsapiens.UCSC.hg38,
+    parallel
 RoxygenNote: 7.2.3
